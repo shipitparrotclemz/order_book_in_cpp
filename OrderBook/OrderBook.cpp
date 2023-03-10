@@ -2,7 +2,7 @@
 
 bool OrderBook::is_empty() const
 {
-    return bids.size() == 0 && asks.size() == 0;
+    return bids.empty() && asks.empty();
 }
 
 void OrderBook::remove_bid(int price, int amount) {
