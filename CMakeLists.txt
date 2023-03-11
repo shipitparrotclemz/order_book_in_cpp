@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.3)
 project(OrderBookDemo)
 
 set(BOOST_ROOT /Users/gohchangmingclement/boost_1_81_0/)
+
+set(GOOGLETEST_VERSION 1.13.0)
+
+# REQUIRED -> Fail with error if Boost is not found
 find_package(Boost REQUIRED)
 
 # add_definitions(-std==c++11)
@@ -22,5 +26,4 @@ add_subdirectory(OrderBookTests)
 
 # specify libraries or flags to use when linking a given target or dependents
 target_link_libraries(OrderBookDemo OrderBook)
-
 target_link_libraries(OrderBookDemo ${Boost_LIBRARIES})

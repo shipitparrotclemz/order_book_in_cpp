@@ -15,3 +15,28 @@ specifically being comfortable with using
 - `add_subdirectory` to include sub directories as part of your CMake pipeline
 - `include_subdirectory` to allow a module to import from another subdirectory
 - `target_link_libraries` to link a library to another library
+- 
+## Building the project
+
+Configure the project and generate a native build system
+
+```
+cmake .
+```
+
+Call the build system to compile / link the project
+
+```angular2html
+cmake --build .
+```
+
+## Running the compiled entry point `main.cpp`
+
+```
+➜  order_book git:(master) ✗ ./OrderBookDemo
+100 bids @ 100
+, 
+200 asks @ 100
+
+Bid Ask Spread:0
+```
