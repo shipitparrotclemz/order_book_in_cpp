@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.3)
 project(OrderBookDemo)
 
+# Update this to the directory boost is installed on your machine.
 set(BOOST_ROOT /Users/gohchangmingclement/boost_1_81_0/)
 
 set(GOOGLETEST_VERSION 1.13.0)
